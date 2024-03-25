@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=PT+Sans+Narrow:wght@700&family=Poppins:wght@100;400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem</title>
+</head>
+<body>
+    
+    <div class="content">
+    <div class="page-form">
+
+        <h1>Vamos entrar em contato em breve, muito obrigado!</h1>
+        <p>Volte para a página e confira nossa estrutura</p>
+    
+        <button class="button" onclick="goBack()">
+            Voltar
+        </button>
+
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/6463c023-b5b5-487a-b465-334e8b5b4345/ccg01kjclB.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<style>
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.content{
+    background-color: #5E54B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vw;
+
+  
+}
+.page-form {
+    padding: 20px;
+    max-width: 600px; 
+     margin: 0 auto; 
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center; 
+    color: white;
+     
+}
+
+
+.button {
+  --😀: #644dff;
+  --😀😀: #4836bb;
+  --😀😀😀: #654dff63;
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--😀😀);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
+}
+
+.button:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--😀😀😀);
+}
+
+@media (max-width: 700px) {
+
+    .content {
+
+  height: initial;
+}
+
+
+
+}
+
+</style>
+</body>
+</html>
